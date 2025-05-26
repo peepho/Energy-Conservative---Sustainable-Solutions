@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Conservative - Sustainable Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="banner">
+            <h1>Energy Conservative</h1>
+        </div>
+        <nav class="nav">
+            <div class="container nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="Projects.html" class="nav-link">Projects</a></li>
+                    <span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+      <img src="logo.png" alt="background" class="img">
+        <div class="container">
+            <article class="article">
+                <h2 class="article-heading">CASH FOR CANS </h2>
+
+                <p class="article-text">
+                    Belridge Secondary College has also introduced a “Cash for Cans” recycling bin program as part of its broader effort to foster more responsible waste management habits among students. The initiative not only incentivizes recycling but also raises awareness of the environmental and financial benefits of diverting aluminium and steel containers from the landfill. Throughout the school year, participating students learn how simple actions, such as sorting recyclables correctly, can add up to significant positive outcomes for the campus community, reducing overall waste, lowering disposal costs, and reinforcing a culture of sustainability and stewardship among their peers. 
+                </p>
+
+                <section class="article-section">
+                    <h3 class="section-heading">Our Approach</h3>
+                    <p class="section-text">
+                        Resource Conservation: Every ton of recycled aluminum saves approximately 95% of the energy required to produce the same amount from virgin ore. Likewise, recycling paper reduces the need for logging and preserves forests’ carbon-sequestration capacity. 
+                        Greenhouse-Gas Reduction: By cutting down on energy-intensive extraction and manufacturing processes, recycling can reduce CO₂ emissions. For example, producing one ton of recycled aluminum avoids roughly 10 metric tons of CO₂ equivalents compared with virgin production. 
+                        Landfill Diversion: Recycling reduces the volume of waste sent to landfills and incinerators, extending the life of existing sites and reducing methane emissions from decomposing organic matter.
+                    </p>
+                </section>
+
+                <section class="article-section">
+                    <h3 class="section-heading">Our Impact</h3>
+                    <p class="section-text">
+                        Cost Savings: Municipalities often pay less for waste collection, transportation, and disposal when a larger share of refuse is recycled. Schools can reinvest savings into educational programs or facility upgrades. 
+                        Job Creation: The recycling and reuse industries employ workers in collection, sorting, processing, and manufacturing. In many regions, these jobs pay competitive wages and spur local economic activity. 
+                        Revenue Generation: Programs that pay students or community members for recyclable materials (e.g., cash-for-cans) help offset program costs and can even generate small profits when high-value commodities (like aluminum) are sold in bulk. 
+                    </p>
+                </section>
+            </article>
+            <aside class="sidebar">
+                <h2 class="sidebar-heading">Related Resources</h2>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; BSC</p>
+        </div>
+    </footer>
+      <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="solar.html">Virtual Power Plants</a>
+  </div>
+
+  <script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.querySelector(".main-content").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector(".main-content").style.marginLeft = "0";
+}
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,192 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+:root {
+    --primary-color:#8fda1f;
+    --secondary-color: #27ae5f;
+    --text-color: #1c62bd;
+    --bg-color: #ffe9e9;
+    --gray-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.img {
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-image: linear-gradient(90deg,rgba(5, 205, 245, 1) 10%, rgba(52, 150, 148, 1) 100%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 68%);
+}
+
+
+.banner {
+    text-align: center;
+    padding: 20px 0;
+    background-image: url("tree.png");
+
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navigation styles */
+.nav {
+    background-color: var(--primary-color);
+    padding: 15px ;
+    display: flex;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001; /* Change this to be higher than header's z-index of 1000 */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #808080;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px; /* Adjust this value to position below header */
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 0px; /* Remove padding-top */
+}
+
+/* Main content styles */
+.main-content {
+    margin-top: 150px;
+    padding: 40px 0;
+    background-image: url("energy.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.article {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.article-heading {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section-heading {
+    color: var(--secondary-color);
+    margin: 25px 0 15px;
+}
+
+.article-text, .section-text {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-heading {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .main-content {
+        margin-top: 200px;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Conservative - Sustainable Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="banner">
+            <h1>Energy Conservative</h1>
+        </div>
+        <nav class="nav">
+            <div class="container nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="Projects.html" class="nav-link">Projects</a></li>
+                    <span style="font-size:15px;cursor:pointer" class="none" onclick="openNav()">☰ More</span>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+      <img src="logo.png" alt="background" class="img">
+        <div class="container">
+            <article class="article">
+                <h2 class="article-heading">Virtual Power Plants</h2>
+
+                <p class="article-text">
+                    <li>WA schools to lead innovative $4 million Virtual Power Plant pilot project</li>
+                    <li>Investment in battery storage could help cut school's electricity bills</li>
+                    <li>The WA Recovery Plan project will promote the WA Government's transition to a cleaner energy future </li>
+                </p>
+
+                <section class="article-section">
+                    <h3 class="section-heading">Our Approach</h3>
+                    <p class="section-text">
+                        Ten schools have been selected, including Belridge Secondary College where the announcement was made, to receive commercial batteries and solar panels - if they do not already have them.
+                        The batteries will enable schools to store their excess energy for later use, which will assist with grid stability.
+                    </p>
+                </section>
+
+                <section class="article-section">
+                    <h3 class="section-heading">Our Impact</h3>
+                    <p class="section-text">
+                        A VPP is a network of distributed energy resources such as rooftop solar panels, batteries and electric vehicles that are 'aggregated' and shared with an energy retailer.
+
+The schools, located in the South West Interconnected System, were determined by Synergy and the Department of Education based on operational, customer, system and technical considerations.
+
+Using Virtual Power Plants mean there is less of a need for traditional generation assets such as coal or gas, which is a step towards a more sustainable power system.
+
+This initiative forms part of the McGowan Government's Distributed Energy Resources Roadmap - for transitioning towards a cleaner, energy future.
+
+The $4 million investment forms part of the McGowan Government's $66.3 million renewable energy technologies package from the WA Recovery Plan, which will boost innovative, clean energy projects throughout Western Australia.
+
+The McGowan Government is focused on enhancing renewable energy technology at more schools across the State.
+                    </p>
+                </section>
+            </article>
+            <aside class="sidebar">
+                <h2 class="sidebar-heading">Related Resources</h2>
+                <a href="https://www.wa.gov.au/government/media-statements/McGowan%20Labor%20Government/Student-power%3A-Schools-to-transform-into-Virtual-Power-Plants-as-part-of-recovery-20200902">Click me</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; BSC </p>
+        </div>
+    </footer>
+      <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Cardgames.html">Virtual solar plants</a>
+  </div>
+
+  <script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.querySelector(".main-content").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector(".main-content").style.marginLeft = "0";
+}
+  </script>
+</body>
+</html>
